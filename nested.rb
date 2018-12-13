@@ -55,7 +55,8 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-     programmer_hash[:dennis_ritchie][:languages].join
+     #programmer_hash[:dennis_ritchie][:languages].join
+     programmer_hash[:dennis_ritchie][:languages].first
 end
 
 def adding_matz
@@ -95,10 +96,10 @@ def changing_alan
           :languages => ["C"]
         }
      }
-
-     programmer_hash[:alan_kay][:known_for] = "GUI"
+     alans_new_info = "GUI"
+     #programmer_hash[:alan_kay][:known_for] = "GUI"
+     programmer_hash[:alan_kay][:known_for] = alans_new_info
      programmer_hash
-
 
 end
 
