@@ -109,8 +109,8 @@ def changing_alan
      
      alans_new_info = "GUI"
      
-     programmer_hash[:alan_kay][:known_for] => "GUI"
-     programmer_hash[:alan_kay][:known_for]
+     programmer_hash[:alan_kay][:known_for] = "GUI"
+     return programmer_hash
      
 end
 
@@ -131,7 +131,6 @@ def adding_to_dennis
         }
      }
         
-        dennis_languages = programmer_hash[:dennis_ritchie][:languages]
-        dennis_languages.push("Assembly")
-        return programmer_hash[:dennis_ritchie][:languages]
+        programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+        programmer_hash
 end
