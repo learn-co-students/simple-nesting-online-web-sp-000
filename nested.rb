@@ -80,7 +80,7 @@ def adding_matz
           :known_for => "Unix",
           :languages => ["C"]
         }
-     }						#This here adds new key to top level of the hash
+     }						#This here adds new key to top level (scope) of the hash
 		 							programmer_hash[:yukihiro_matsumoto] = {}
 									programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
 									programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
