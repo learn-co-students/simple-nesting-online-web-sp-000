@@ -11,16 +11,16 @@ def hopper
         {
           :known_for => "Object Orientation",
           :languages => ["Smalltalk", "LISP"]
-        }
+        },
         :dennis_ritchie =>
         {
           :known_for => "Unix",
           :languages => "C"
-        }
+        } 
  		}
      
-# return {:grace_hopper => :known_for => "COBOL", :languages => ["COBOL",  "FORTRAN"]} 
-end  
+ return :known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]
+ end
 
 
 def alan_kay_is_known_for
