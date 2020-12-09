@@ -2,22 +2,25 @@
 def hopper
 	programmer_hash = 
  		{
-        :grace_hopper => {
+        :grace_hopper => 
+        {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
         },
-        :alan_kay => {
+        :alan_kay => 
+        {
           :known_for => "Object Orientation",
           :languages => ["Smalltalk", "LISP"]
-        },
-        :dennis_ritchie => {
-          :known_for => "Unix",
-          :languages => ["C"]
         }
-     }
+        :dennis_ritchie =>
+        {
+          :known_for => "Unix",
+          :languages => "C"
+        }
+     
+return {:known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]}
+end 
 
-
-end
 
 def alan_kay_is_known_for
 	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
@@ -108,26 +111,21 @@ end
 def adding_to_dennis
 	programmer_hash = 
  		{
-        :grace_hopper => {
+        :grace_hopper => 
+        {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
         },
-        :alan_kay => {
+        :alan_kay => 
+        {
           :known_for => "Object Orientation",
           :languages => ["Smalltalk", "LISP"]
         },
-        :dennis_ritchie => {
+        :dennis_ritchie => 
+        {
           :known_for => "Unix",
           :languages => ["C"]
         }
      }
 
 end
-
-# epic_tragedy[:montague][:hero][:status] = "dead"
-# epic_tragedy[:capulet][:heroine][:status] = "dead"
-
- 
-   
-# return epic_tragedy
-# end
