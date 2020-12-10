@@ -22,8 +22,6 @@ def hopper
   #binding.pry
           
  return programmer_hash => [grace_hopper]
- 
-#return :known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]
  end
 
 
@@ -50,7 +48,7 @@ def  alan_kay_is_known_for
      }
      
      return alan_kay ["Object Orientation"]
-#end
+     end
 
 def dennis_ritchies_language
 	programmer_hash = 
@@ -125,10 +123,9 @@ def changing_alan
      #alans_new_info = "GUI"
      
      
-#     programmer_hash = ["Alan_Kay"]["known_for"] = "GUI"
-# return programmer_hash
+programmer_hash = ["Alan_Kay"]["known_for"] = "GUI"
+return programmer_hash
 
-return Alan_Kay
 end
 
 
@@ -146,4 +143,4 @@ def adding_to_dennis
 
 return  dennis_ritchie ["languages"] 
 end 
-end 
+
