@@ -1,4 +1,4 @@
-
+require 'pry'
 def hopper
 	programmer_hash = 
  		{
@@ -15,19 +15,23 @@ def hopper
         :dennis_ritchie =>
         {
           :known_for => "Unix",
-          :languages => "C" 
-        } 
+          :languages => "C"  
+        }  
  		}
-     
- return :known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]
+
+  #binding.pry
+          
+ return programmer_hash => [grace_hopper]
+ 
+#return :known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]
  end
 
 
-def alan_kay_is_known_for
+def  alan_kay_is_known_for
 	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
 	
-	programmer_hash = 
- 		{
+	
+ 	{ 
         :grace_hopper => 
         {
           :known_for => "COBOL",
@@ -45,8 +49,8 @@ def alan_kay_is_known_for
         }
      }
      
-     return "Object Orientation"
-end
+     return alan_kay ["Object Orientation"]
+#end
 
 def dennis_ritchies_language
 	programmer_hash = 
@@ -54,7 +58,7 @@ def dennis_ritchies_language
         :grace_hopper => 
         {
           :known_for => "COBOL",
-          :languages => ["COBOL", "FORTRAN"]
+          :languages => ["COBOL", "FORTRAN"] 
         },
         :alan_kay => 
         {
@@ -135,10 +139,11 @@ def adding_to_dennis
 	{
    :dennis_ritchie => 
   {
-          :known_for => "Unix",
+          :known_for => "Unix", 
           :languages => ["C"]
   }
 	}
 
-return  dennis_ritchie ["languages"] = C, Assembly
+return  dennis_ritchie ["languages"] 
+end 
 end 
