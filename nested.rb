@@ -1,4 +1,6 @@
-require 'pry'
+require 'pry' 
+
+
 def hopper
 	programmer_hash = 
  		{
@@ -19,8 +21,9 @@ def hopper
         }  
  		}
 
-  #binding.pry 
-  return programmer_hash = [:grace_hopper][:known_for][:languages]
+binding.pry 
+  return programmer_hash[:grace_hopper]
+  
  end
 
 
@@ -46,7 +49,7 @@ def  alan_kay_is_known_for
         }
      }
      
-       return [:alan_kay][:known_for]
+       return programmer_hash[:alan_kay][:known_for]
      end 
 
 def dennis_ritchies_language
@@ -68,12 +71,14 @@ def dennis_ritchies_language
           :languages => "C"
         }
      } 
+       programmer_hash["dennis_ritchie"]["languages"] << "Assembly"
      return programmer_hash[:dennis_ritchie][:languages]
-end
+     binding.pry
+ end  
 
-def adding_matz
-# add the following information to the top level of programmer_hash
-# :yukihiro_matsumoto => {
+def adding_matz 
+# add the following information to the top level of programmer_hash 
+# :yukihiro_matsumoto = > {
 #   :known_for => "Ruby",
 #    :languages => ["LISP", "C"]
 # }
@@ -93,13 +98,12 @@ def adding_matz
           :languages => ["C"]
         }
      }
-	programmer_hash = {
-	  :yukihiro_matsumoto => 
-	  {
-      :known_for => "Ruby",
-      :languages => ["LISP", "C"]
-	  }
-	}
+   
+     
+	programmer_hash [:yukihiro_matsumoto][:known_for] ="Ruby",
+  programmer_hash [:yukihiro_matsumoto][:languages] = ["LISP", "C"]
+return programmer_hash[:yukihiro_matsumoto][:known_for]
+return programmer_hash[:yukihiro_matsumoto][:langauges]
 end
 
 def changing_alan
@@ -122,13 +126,10 @@ def changing_alan
      #alans_new_info = "GUI"
      
      
-programmer_hash [alan_kay][kown_for] << "GUI"
-return programmer_hash[:alan_kay][:known_for]
+programmer_hash[:alan_kay][:known_for] = "GUI"
+return programmer_hash[:alan_kay][:known_for] 
 end 
  
-
-
-
 
 def adding_to_dennis
 	programmer_hash = 
@@ -137,7 +138,9 @@ def adding_to_dennis
           :known_for => "Unix",
           :languages => ["C"]
   }
-	}
-programmer_hash[:dennis_ritchie][:languages] 
-end 
+	}  
+	programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+     return programmer_hash[:dennis_ritchie][:languages] 
+     binding.pry
+ end 
 
