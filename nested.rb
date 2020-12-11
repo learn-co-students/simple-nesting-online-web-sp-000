@@ -21,7 +21,7 @@ def hopper
         }  
  		}
 
-binding.pry 
+#binding.pry 
   return programmer_hash[:grace_hopper]
   
  end
@@ -70,10 +70,9 @@ def dennis_ritchies_language
           :known_for => "Unix",
           :languages => "C"
         }
-     } 
-       programmer_hash["dennis_ritchie"]["languages"] << "Assembly"
-     return programmer_hash[:dennis_ritchie][:languages]
-     binding.pry
+ 		}
+            return programmer_hash[:dennis_ritchie][:languages]
+     #binding.pry
  end  
 
 def adding_matz 
@@ -95,15 +94,17 @@ def adding_matz
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
    
      
-	programmer_hash [:yukihiro_matsumoto][:known_for] ="Ruby",
-  programmer_hash [:yukihiro_matsumoto][:languages] = ["LISP", "C"]
-return programmer_hash[:yukihiro_matsumoto][:known_for]
-return programmer_hash[:yukihiro_matsumoto][:langauges]
+	programmer_hash[:yukihiro_matsumoto][:known_for] ="Ruby",
+  programmer_hash[:yukihiro_matsumoto][:languages] = "LISP", "C"
+#return programmer_hash[:yukihiro_matsumoto][:known_for]
+# return programmer_hash[:yukihiro_matsumoto][:langauges]
+
+return programmer_hash[:yukihiro_matsumoto]
 end
 
 def changing_alan
@@ -139,8 +140,9 @@ def adding_to_dennis
           :languages => ["C"]
   }
 	}  
-	programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+	programmer_hash[:dennis_ritchie][:languages].concat "C" "Assembly"
      return programmer_hash[:dennis_ritchie][:languages] 
-     binding.pry
+
+#binding.pry
  end 
 
