@@ -20,7 +20,7 @@ def hopper
  		}
 
   #binding.pry 
-  return programmer_hash [:grace_hopper][:known_for]
+  return programmer_hash = [:grace_hopper][:known_for][:languages]
  end
 
 
@@ -135,8 +135,8 @@ def adding_to_dennis
 	{
    :dennis_ritchie => 
   {
-          :known_for => "Unix", 
-          :languages => "C" 
+          :known_for "Unix", 
+          :languages "C" 
   }
 	}
 programmer_hash[:dennis_ritchie][:languages] 
